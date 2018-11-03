@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">CONTROLE FINANCEIRO</string>
+    <string name="initial_string">Clique no + para adicionar uma atividade!</string>
+    <string name="formValor">Valor:</string>
+    <string name="formOrigem">Origem:</string>
+    <string name="formData">Data:</string>
+    <string name="formDescricao">Descrição:</string>
+    <string name="formTipo">Tipo de transação:</string>
+    <string name="formPagamento">Forma de pagamento:</string>
+    <string name="botaoConfirma">Confirmar</string>
+    <string name="botaoApagar">Apagar</string>
+    <string name="confirmaADD">Transação adicionada com sucesso!</string>
+    <string name="confirmaDEL">Transação apagada com sucesso!</string>
+    <string name="confirmaALT">Transação alterada com sucesso!</string>
+    <string name="erroALT">Selecione uma transação!</string>
+    <string name="resultSaldo">MEU SALDO: R$</string>
+    <string name="erroValor">Valor não é valido</string>
+    <string name="erroOrigem">Origem não foi informada</string>
+
+
+
+</resources>

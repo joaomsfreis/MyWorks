@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Calculo IMC</title>
+
+    <script src="./js/jquery-3.3.1.js"></script>
+    <script src="./js/imc.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+
+</head>
+<body class="bg-dark">
+    <div class="container bg-light">
+        <div class="jumbotron jumbotron-fluid text-center bg-dark text-light">
+            <div class="container">
+                <h1>CALCULO IMC</h1>
+            </div>
+        </div>
+        
+        <div class="container border border-dark">
+            <div class="col">
+                <h1>DADOS:</h1>
+            </div>
+            
+            <form name="date">
+                <div class="row">    
+                    <div class="col">
+                        <div class="form-group" id="grupoV1">
+                            <label for="height" id="label1">Altura:</label>
+                            <input type="text" name="height" value="" class="form-control">
+                    
+                            <div class="alert alert-danger" style="display: none" id="alert1">
+                            <span>Informe a altura!</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group" id="grupoV2">
+                            <label for="weight" id="label2">Peso:</label>
+                            <input type="text" name="weight" value="" class="form-control">
+                    
+                            <div class="alert alert-danger" style="display: none" id="alert2">
+                            <span>Informe o peso!</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <button type="button" class="btn btn-dark" name="calc" id="btnCalc">Calcular IMC</button>
+                    </div>   
+                </div>
+                <br>
+                <div class="col">
+                    <h1>RESULTADO:</h1>
+                </div>
+                <div class="row">    
+                    <div class="col-3">
+                        <div class="form-group" id="grupoV3">
+                            <label for="imc" id="label3">IMC:</label>
+                            <input type="text" name="imc" value="" readonly="true" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group" id="grupoV4">
+                            <label for="diagnostic" id="label4">Diagnóstico:</label>
+                            <input type="text" name="diagnostic" value="" readonly="true" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+            </form>
+            <br><br>
+        </div>
+    </div>    
+    
+</body>
+</html>

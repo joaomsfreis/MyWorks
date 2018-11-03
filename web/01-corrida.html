@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Corrida de rolimã</title>
+
+    <script src="./js/jquery-3.3.1.js"></script>
+    <script src="./js/corrida.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+
+</head>
+<body class="bg-dark">
+    <div class="container bg-light">
+        <div class="jumbotron jumbotron-fluid text-center bg-dark text-light">
+            <div class="container">
+                <h1>CORRIDA DE ROLIMÃ</h1>
+            </div>
+        </div>
+        
+        <div class="container border border-dark">
+            <div class="col">
+                <h1>CADASTRAR COMPETIDOR:</h1>
+                <h6>Máximo 6 competidores!</h6>
+            </div>
+            
+            <form name="date">
+                <div class="row">    
+                    <div class="col-10">
+                        <div class="form-group" id="grupoV1">
+                            <label for="nameCompetitor" id="label1">Nome</label>
+                            <input type="text" name="nameCompetitor" value="" class="form-control">
+                    
+                            <div class="alert alert-danger" style="display: none" id="alert1">
+                            <span>Informe o primeiro nome do competidor!</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="form-group" id="grupoV2">
+                            <label for="time" id="label2">Tempo (s)</label>
+                            <input type="text" name="time" value="" class="form-control">
+                    
+                            <div class="alert alert-danger" style="display: none" id="alert2">
+                            <span>Informe o tempo do competidor!</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <button type="button" class="btn btn-dark" name="add" id="btnAdd">Adicionar Competidor</button>
+                        <button type="button" class="btn btn-dark" name="restart" id="btnRestart">Recomeçar cadastro</button>
+                    </div>   
+                </div>    
+            </form>
+            <br><br>
+        </div>
+        <br>
+        <div class="container border border-dark">
+            
+            <div class="col">
+                <h1>RESULTADO:</h1>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="table-responsive">
+                            <table class="table table-bordered table-striped table-hover" id="tableResult">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th>Posição</th>
+                                        <th>Largada</th>
+                                        <th>Competidor(a)</th>
+                                        <th>Tempo (s)</th> 
+                                        <th>Resultado</th> 
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                        </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <button type="button" class="btn btn-dark" name="result" id="btnResult">Ver resultado</button>
+                </div>     
+            </div>
+            <br><br>
+        </div>
+        <br><br>
+    </div>
+    
+</body>
+</html>
